@@ -1,0 +1,1 @@
+searchkick callbacks: :async

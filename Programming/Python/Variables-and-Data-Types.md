@@ -101,6 +101,15 @@ print(sys.getsizeof(10))
 print(sys.getsizeof(10**100))
 ```
 
+
+Python is Different
+    Python integers have arbitrary precision.
+
+    Example: x = 999999999999999999999999999999999999999999999999999
+
+    Python stores as many digits as needed (limited mainly by available memory). This is one reason Python integers use more memory than C integers.
+
+
 ### Integer Caching (CPython)
 
 * CPython caches integers from **-5 to 256**.
