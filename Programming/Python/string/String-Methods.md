@@ -13,6 +13,7 @@ lstrip()
 rstrip()
 replace()
 find()
+rfind()
 index()
 
 If string length is n so for upper() and lower()
@@ -32,7 +33,7 @@ text = "python engineering"
 print(text.capitalize()) // Python engineering
 print(text.title())  // Python Engineering
 
-# swapcase()
+## swapcase()
 
 Upper becomes lower. Lower becomes upper.
 
@@ -55,7 +56,7 @@ Suppose user enters:
 
     Sakshi
 
-# lstrip()
+## lstrip()
 
 Remove only left spaces.
 
@@ -67,7 +68,7 @@ Output
 
 Python
 
-# rstrip()
+## rstrip()
 
 Remove only right spaces.
 
@@ -93,9 +94,9 @@ Output
 
 I like Python
 
-find()
+## find()
 
-Find the index of a substring.
+Find the first index of a substring.
 
 text = "Python"
 
@@ -115,8 +116,19 @@ Output
 
 No exception.
 
+##rfind()
 
-index()
+Find the last index of a substring.
+
+text = "the Python"
+
+print(text.rfind("t"))
+
+Output
+
+6
+
+## index()
 
 Looks similar.
 
@@ -172,9 +184,10 @@ isspace()
 partition()
 removeprefix()
 removesuffix()
+islower()
+isupper()
 
-
-split()
+## split()
 
 Default Separator
 
@@ -224,7 +237,7 @@ url = "https://openai.com/docs"
 parts = url.split("/")
 
 
-rsplit()
+## rsplit()
 
 Splits from the right.
 
@@ -275,7 +288,7 @@ Output: Python Java C++
 
 
 
-Why join() is Faster than +
+##  Why join() is Faster than +
 
 Bad:
 
@@ -316,7 +329,7 @@ Important Note: CPython has some optimizations for simple += cases, but you shou
 
 
 
-# startswith()
+## startswith()
 url = "https://openai.com"
 
 print(url.startswith("https"))
@@ -331,7 +344,7 @@ if not url.startswith("https://"):
     print("Invalid URL")
 
 
-# endswith()
+## endswith()
 filename = "resume.pdf"
 
 print(filename.endswith(".pdf"))
@@ -352,7 +365,7 @@ Allow:
 Reject: .exe
 
 
-# count()
+## count()
 
 Counts occurrences.
 
@@ -364,7 +377,7 @@ Output:
 
 3
 
-# isalpha()
+## isalpha()
 
 Checks whether all characters are alphabetic.
 
