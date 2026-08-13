@@ -310,3 +310,15 @@ django-admin startproject config .
 python manage.py migrate
 python manage.py runserver
 python manage.py startapp core
+
+
+We need to convert the model change into a migration.
+
+Run:
+
+> python manage.py makemigrations
+
+Then:
+
+> python manage.py migrate
+
