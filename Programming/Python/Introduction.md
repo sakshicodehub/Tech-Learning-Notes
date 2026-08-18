@@ -1,4 +1,10 @@
-Q how python code execution work? how python interprited code?
+An **interpreted language** is a high-level language run and executed by an interpreter (a program which converts the high-level language to machine code and then executing) on the go; it processes the program a little at a time.
+
+A **compiled language** is a high-level language whose code is first converted to machine-code by a compiler (a program which converts the high-level language to machine code) and then executed by an executor (another program for running the code).
+
+
+
+# Q how python code execution work? how python interprited code?
 
 
 
@@ -21,13 +27,14 @@ What happens when you run a Python program?
             ▼
     CPU executes machine instructions
 
-Why is Python called a high-level language?
+# Why is Python called a high-level language?
         Python is called a high-level language because it allows developers to write code using simple, human-readable syntax without worrying about hardware details such as memory management, CPU registers, or machine instructions. Python provides high-level abstractions that improve developer productivity.
-Is Python only an interpreted language? Explain.
+
+# Is Python only an interpreted language? Explain.
         Python is not purely interpreted. CPython first compiles source code into platform-independent bytecode (.pyc). The Python Virtual Machine (PVM) then executes that bytecode by interpreting it.
 
 
-large companies usually choose Python for reasons like:
+# large companies usually choose Python for reasons like:
         Faster development
         Lower maintenance cost
         High developer productivity
@@ -37,14 +44,14 @@ large companies usually choose Python for reasons like:
         Faster prototyping
         Strong integration with other languages
 
-Advantages
+## Advantages
         Readable code
         Huge ecosystem
         Cross-platform
         Large community
         Rapid development
         Automatic memory management
-Disadvantages
+## Disadvantages
         Slow execution
         High memory usage
         The Global Interpreter Lock (GIL) limits true parallel execution of CPU-bound threads in CPython.

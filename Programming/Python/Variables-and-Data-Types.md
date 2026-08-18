@@ -1,4 +1,4 @@
-variable:
+# variable:
     A variable in Python is a name that refers (or is bound) to a Python object. It does not store the object itself; it stores a reference to that object.
 
     Variable
@@ -46,6 +46,9 @@ how str is immutable?
     print(s)   //HELLO
     print(id(s))  //140217318439984
 
+**Object references give Python flexibility, and object sharing can also provide memory benefits.**
+
+Q, why does changing the list through a also affect what we see through b, but reassigning a doesn't?
 
 # Python Data Types
 
@@ -57,15 +60,21 @@ A data type defines:
 * What operations can be performed on it.
 * How Python stores it in memory.
 
-### Built-in Primitive Types
+**Data type defines what kind of data is stored in a variable/object and what operations can be performed on it.**
+
+### Python provides several built-in data types,
 
 ```python
-int
-float
-bool
-complex
-str
-NoneType
+int,
+float, 
+complex, 
+bool, 
+str, 
+list, 
+tuple, 
+dict, 
+set, 
+NoneType.
 ```
 
 ---
@@ -356,3 +365,57 @@ print(a is None)
 * **None** → No value
 
 These notes are written in a concise, notebook-style format—easy to revise before interviews or while practicing.
+
+
+# Python gives us two different ways to interact with objects:
+
+**Mutation**
+   
+   ↓
+
+modify existing object
+  
+   ↓
+
+append(), extend(), sort(), etc.
+
+example: 
+a = [1, 2, 3]
+b = a
+
+a.append(4)
+
+a ──┐
+    ├──> [1, 2, 3, 4]
+b ──┘
+
+> append() is a method of the list object/type.
+
+
+**New object**
+
+   ↓
+
+create another object
+
+   ↓
+
++, -, *, etc. depending on the type
+
+a = [1, 2, 3]
+b = a
+
+a = a + [4]
+
+a ─────> [1, 2, 3, 4]
+
+b ─────> [1, 2, 3]
+
+> The list's __add__() implementation returns a new list.
+
+
+### operator overloading makes this even more interesting because + doesn't have one universal meaning.
+
+10 + 20          # integer addition
+"Hello " + "AI"  # string concatenation
+[1, 2] + [3, 4]  # list concatenation
