@@ -1,3 +1,6 @@
+
+Object-Relational Mapper (a tool that lets you work with database data using Python objects instead of writing SQL for every operation).
+
 # The important ORM concept
 
 This:

@@ -69,3 +69,10 @@ django-admin startproject config .
 python manage.py migrate
 python manage.py runserver
 python manage.py startapp core  -> create a small app called core.
+
+python manage.py showmigrations  //SHOW ALL MIGRATIONS
+
+python manage.py check
+
+
+python manage.py sqlmigrate accounts 0001  //MODEL NAME AND NUMBER
