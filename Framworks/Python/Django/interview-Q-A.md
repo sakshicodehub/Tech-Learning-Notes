@@ -75,3 +75,26 @@ Used to register models with Django's admin interface.
 
 migrations/
 Contains migration files, which describe changes to the database schema, meaning the structure of database tables and relationships.
+
+
+Topics to prepare
+MVT
+Project vs app
+Request/response cycle
+URLs/views
+Models
+ORM
+Relationships
+Migrations
+Forms
+Middleware
+Authentication/authorization
+Django REST Framework
+Serializers
+APIView/generic views/ViewSets
+JWT
+Permissions
+Query optimization
+Transactions
+Signals
+Deployment basics

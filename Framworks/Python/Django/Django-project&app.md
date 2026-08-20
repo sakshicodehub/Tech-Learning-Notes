@@ -1,3 +1,5 @@
+# Project vs app
+
 terminology
 
 This is an important distinction.
