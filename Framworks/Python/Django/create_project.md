@@ -322,3 +322,6 @@ Then:
 
 > python manage.py migrate
 
+> python manage.py collectstatic   
+This collects static files from your apps into one location for deployment.
+
