@@ -66,6 +66,7 @@ That dot means:
 
 Create the Django project in the current directory rather than creating another nested config directory.
 
+source .venv/bin/activate
 
 django-admin startproject config .
 python manage.py migrate
